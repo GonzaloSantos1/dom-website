@@ -19,16 +19,43 @@ body {
 
 header {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 3vh 0 7vh;
   justify-content: space-between;
   align-items: center;
   min-height: 7vh;
+  background-color: rgba(163, 44, 123, 0.288);
 }
 
-.navbar {
+.navbar-container {
   width: 500px;
+  height: 50px;
 }
 
-.navbar ul {
+.navbar-menu {
   display: flex;
   justify-content: space-around;
+  font-weight: 900;
+
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+li {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li:hover {
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+
+.logo-container {
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 20px;
 }
